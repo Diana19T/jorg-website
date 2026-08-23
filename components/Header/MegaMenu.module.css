@@ -1,0 +1,149 @@
+.overlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--color-white);
+}
+
+.panel {
+  width: 100%;
+  background: var(--color-white);
+  overflow: hidden;
+}
+
+/* ---------- Categories (25:1125) — height 553px ---------- */
+.categoriesRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 42px 0;
+}
+
+.categoriesItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 217px;
+}
+
+.categoriesImage {
+  width: 100%;
+  height: 272px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------- Collections (25:1184) — height 555px ---------- */
+.collectionsRow {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  padding: 42px 0 42px 121px;
+}
+
+.collectionsLeft {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.collectionsHeroImage {
+  width: 394px;
+  height: 496px;
+  flex-shrink: 0;
+  object-fit: cover;
+  display: block;
+}
+
+.collectionsRight {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.collectionsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  width: 633px;
+}
+
+.collectionsGridImage {
+  width: 199px;
+  height: 234px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------- Gift (25:1171) — height 430px ---------- */
+.giftRow {
+  display: flex;
+  gap: 37px;
+  padding: 42px 0 0 155px;
+}
+
+.giftItem {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  width: 408px;
+}
+
+.giftImage {
+  width: 408px;
+  height: 272px;
+  object-fit: cover;
+  display: block;
+}
+
+.giftCaption {
+  display: inline-block;
+  width: 163px;
+  font-family: var(--font-arial);
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-black);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ---------- High Jewelry (25:1109) — height 555px ----------
+   Absolute positioning (not flex) is required here: Figma's row is
+   asymmetric (left edge 181px, right edge 132px — not a mirrored pair),
+   so a flex row with equal padding on both sides compressed the text
+   column and dragged Frame 152 / Frame 153 left of their real position. */
+.hjRow {
+  position: relative;
+  height: 526px; /* 30px top offset + 496px image height */
+}
+
+.hjImage {
+  position: absolute;
+  top: 30px;
+  width: 394px;
+  height: 496px;
+  object-fit: cover;
+  display: block;
+}
+
+.hjImage1 {
+  left: 181px;
+}
+
+.hjImage2 {
+  left: 762px; /* Frame 152 */
+}
+
+.hjImage3 {
+  left: 1184px; /* Frame 153 */
+}
+
+.hjTextColumn {
+  position: absolute;
+  left: 603px;
+  top: 50%;
+  transform: translateY(-50%);
+}

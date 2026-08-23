@@ -1,0 +1,30 @@
+/*
+  Design tokens sampled directly from the JORG Figma file (fileKey tzgPPcKAnkQEQI2SDy8vrJ).
+  Every value here traces back to a literal value on a Figma layer — nothing invented.
+  As more sections of the file are implemented, extend this file rather than
+  hard-coding new literals in component CSS.
+*/
+
+:root {
+  /* ---- Color: sampled from Header (25:1527) + Footer (4:2154) ---- */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-text-primary: #161513; /* Footer "Heading 2" (Store locator / Stay informed) */
+  --color-text-secondary: #58534d; /* Footer body copy + nav item text ("футер секондарі") */
+  --color-text-label: #5a5755; /* Footer column labels (About / Services / Contact / Follow) */
+  --color-text-muted: #757575; /* Footer email field placeholder */
+  --color-text-copyright: #565252; /* Footer copyright line, rendered at 60% opacity */
+  --color-divider: #eee9e2; /* Footer horizontal dividers */
+  --color-placeholder-fill: #ebebed; /* Placeholder fill behind all product/editorial imagery */
+
+  /* ---- Typography families ---- */
+  /* --font-palanquin-dark and --font-inter are injected by next/font in app/layout.tsx */
+  --font-arial: Arial, Helvetica, sans-serif;
+
+  /* ---- Layout ---- */
+  --page-width: 1710px;
+  --page-margin: 32px; /* left/right edge margin used by header logo, icons, footer content */
+
+  /* ---- Header (Navigation component, 25:1527) ---- */
+  --header-height: 67px; /* 622px component: header band = 622 * (1 - 89.23%) */
+}

@@ -1,0 +1,83 @@
+.header {
+  position: relative;
+  width: 100%;
+  background: var(--color-white);
+  z-index: 50;
+}
+
+.bar {
+  position: relative;
+  height: var(--header-height);
+  width: 100%;
+}
+
+.logo {
+  position: absolute;
+  left: var(--page-margin);
+  top: 12px;
+  font-family: var(--font-palanquin-dark);
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 2.16px;
+  color: var(--color-black);
+  white-space: nowrap;
+}
+
+.nav {
+  position: absolute;
+  left: 50%;
+  top: 24px;
+  transform: translateX(-50%);
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navItem a {
+  display: block;
+  height: 22px;
+  font-family: var(--font-arial);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-black);
+  white-space: nowrap;
+  position: relative;
+}
+
+/* Underline-on-hover, matching the Line asset under each Header Link */
+.navItem a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.navItem a:hover::after,
+.navItem a[aria-expanded="true"]::after {
+  transform: scaleX(1);
+}
+
+.actions {
+  position: absolute;
+  right: var(--page-margin);
+  top: 21.5px;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.actions button {
+  display: flex;
+  color: var(--color-black);
+  line-height: 0;
+}
