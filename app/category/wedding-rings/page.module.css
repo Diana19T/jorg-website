@@ -1,0 +1,42 @@
+.page {
+  width: 1710px;
+  margin: 0 auto;
+}
+
+.intro {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 32px 40px;
+  text-align: center;
+  font-family: var(--font-arial);
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--color-text-secondary);
+}
+
+.gridSection {
+  padding: 0;
+}
+
+.exploreMoreWrap {
+  display: flex;
+  justify-content: center;
+  padding: 56px 32px;
+}
+
+.exploreMore {
+  border: 1px solid var(--color-black);
+  padding: 16px 40px;
+  font-family: var(--font-arial);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--color-black);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.exploreMore:hover {
+  background: var(--color-black);
+  color: var(--color-white);
+}

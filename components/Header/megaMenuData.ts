@@ -5,7 +5,7 @@ export const categoriesColumns = [
   { title: "Shop by Type", items: ["Rings", "Earrings", "Necklaces", "Bracelets", "Pendants"] }, // 25:1131
   { title: "Shop by Material", items: ["Yellow Gold", "White Gold", "Rose Gold", "Black Gold", "Diamonds"] }, // 25:1142
   { title: "Shop by Design", items: ["Minimal", "Classic", "Statement", "Signet Rings", "Bridal"] }, // 25:1153
-  { title: "Shop by Occasion", items: ["Everyday Wear", "Wedding", "Evening", "Gifts", "New Arrivals"] }, // 25:1164
+  { title: "Shop by Occasion", items: ["Everyday Wear", { label: "Wedding", href: "/category/wedding-rings" }, "Evening", "Gifts", "New Arrivals"] }, // 25:1164
 ];
 
 export const collectionsLeftColumn = {

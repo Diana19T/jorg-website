@@ -1,0 +1,32 @@
+.card {
+  display: block;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 427.5 / 533;
+  object-fit: cover;
+  display: block;
+  background: var(--color-placeholder-fill);
+}
+
+.info {
+  padding: 21px 0 0;
+}
+
+.name {
+  margin: 0;
+  font-family: var(--font-arial);
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-black);
+}
+
+.price {
+  margin: 6px 0 0;
+  font-family: var(--font-arial);
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-text-secondary);
+}

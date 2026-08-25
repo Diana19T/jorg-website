@@ -1,0 +1,41 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 536px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.textBlock {
+  position: absolute;
+  left: 307px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-family: var(--font-arial);
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-arial);
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--color-black);
+  white-space: nowrap;
+}

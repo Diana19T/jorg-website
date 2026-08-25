@@ -1,0 +1,34 @@
+.breadcrumb {
+  padding: 20px var(--page-margin) 19px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-arial);
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.item a {
+  color: var(--color-text-secondary);
+}
+
+.item a:hover {
+  color: var(--color-black);
+}
+
+.item span[aria-current="page"] {
+  color: var(--color-black);
+}
+
+.separator {
+  color: var(--color-text-secondary);
+}
