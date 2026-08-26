@@ -63,7 +63,7 @@
   text-transform: uppercase;
   color: #151515;
   transition: background 0.15s ease, color 0.15s ease;
-  padding-left: 50px;
+  padding-left: 150px;
 }
 
 .filterButton:hover {
