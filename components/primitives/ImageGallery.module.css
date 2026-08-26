@@ -1,0 +1,33 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  width: 995px;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 976px;
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Component 44 — a simple vertical pill/scroll indicator (plain rounded bar,
+   recreated in CSS rather than downloaded: trivial single-shape geometry,
+   not a multi-path icon glyph). Figma position: left 32px, top 765px. */
+.scrollPill {
+  position: absolute;
+  left: 32px;
+  top: 765px;
+  width: 12px;
+  height: 42px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.7);
+}
