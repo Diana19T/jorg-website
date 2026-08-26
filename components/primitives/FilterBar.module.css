@@ -53,7 +53,7 @@
   align-items: center;
   justify-content: center;
   height: 38px;
-  padding: 20 21px;
+  padding: -20 21px;
   border: 1px solid #161513;
   font-family: var(--font-arial);
   font-weight: 117;
