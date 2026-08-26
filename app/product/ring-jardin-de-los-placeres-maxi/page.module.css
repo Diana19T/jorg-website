@@ -1,0 +1,253 @@
+.page {
+  width: 1710px;
+  margin: 0 auto;
+}
+
+.mainRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 72px; /* info panel left:1067 - gallery width:995 = 72 */
+}
+
+.infoPanel {
+  position: sticky;
+  top: 144px; /* matches Figma's absolute top:144 for the info panel (header 67 + breadcrumb 77) */
+  width: 571px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-bottom: 40px;
+}
+
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-arial);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: #1d1d1d;
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  height: 32px;
+}
+
+.price {
+  margin: 0;
+  font-family: var(--font-inter);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #1d1d1d;
+}
+
+.detailsBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 571px;
+}
+
+.materialBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.materialLabel {
+  margin: 0;
+  font-family: var(--font-arial);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #58544e;
+}
+
+.swatchRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.swatch {
+  width: 68px;
+  height: 68px;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid transparent;
+}
+
+.swatch[data-active="true"] {
+  border-color: var(--color-black);
+}
+
+.swatch img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  display: block;
+}
+
+.sizeRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 52px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  font-family: var(--font-arial);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #1d1d1d;
+}
+
+.buyBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.buttonStack {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.addToBag,
+.buyNow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  font-family: var(--font-arial);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  transition: opacity 0.15s ease;
+}
+
+.addToBag {
+  background: #1d1d1d;
+  color: #f4f0f0;
+}
+
+.addToBag:hover {
+  opacity: 0.85;
+}
+
+.buyNow {
+  background: transparent;
+  border: 1px solid var(--color-black);
+  color: var(--color-black);
+}
+
+.buyNow:hover {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.linksRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20px;
+}
+
+.linkWithIcon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid transparent;
+  font-family: var(--font-arial);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.linkWithIcon:hover {
+  border-bottom-color: var(--color-text-secondary);
+}
+
+/* ---------- Related products ("Curated For You") ---------- */
+
+.related {
+  position: relative;
+  padding-top: 96px;
+  padding-bottom: 154px;
+  text-align: center;
+}
+
+.relatedTitle {
+  margin: 0;
+  font-family: var(--font-inter);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: #161513;
+}
+
+.relatedSeeAll {
+  display: inline-block;
+  margin-top: 12px;
+  font-family: var(--font-inter);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-black);
+  padding-bottom: 4px;
+  border-bottom: 1px solid transparent;
+}
+
+.relatedSeeAll:hover {
+  border-bottom-color: var(--color-black);
+}
+
+.relatedGridWrap {
+  position: relative;
+  margin-top: 63px;
+  text-align: left;
+}
+
+.carouselButton {
+  position: absolute;
+  top: 245px; /* vertically centered on the product row */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  background: var(--color-white);
+}
+
+.carouselButton[data-side="prev"] {
+  left: 32px;
+}
+
+.carouselButton[data-side="next"] {
+  right: 32px;
+}
