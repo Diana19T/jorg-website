@@ -1,32 +1,45 @@
 .card {
   display: block;
+  width: 100%;
+  height: 628px;
+  position: relative;
 }
 
 .image {
   width: 100%;
-  height: auto;
-  aspect-ratio: 427.5 / 533;
+  height: 533px;
   object-fit: cover;
   display: block;
   background: var(--color-placeholder-fill);
 }
 
 .info {
-  padding: 21px 0 0;
+  position: relative;
+  width: 100%;
+  height: 93px;
+  background: var(--color-white);
 }
 
 .name {
+  position: absolute;
+  left: 16px;
+  top: 16px;
   margin: 0;
   font-family: var(--font-arial);
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: var(--color-black);
 }
 
 .price {
-  margin: 6px 0 0;
+  position: absolute;
+  left: 16px;
+  top: 39px;
+  margin: 0;
   font-family: var(--font-arial);
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 13px;
   line-height: 18px;
   color: var(--color-text-secondary);
 }

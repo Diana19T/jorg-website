@@ -4,14 +4,16 @@
 }
 
 .intro {
-  max-width: 760px;
+  width: 668px;
   margin: 0 auto;
-  padding: 48px 32px 40px;
+  padding: 43px 0 40px;
   text-align: center;
   font-family: var(--font-arial);
+  font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: var(--color-text-secondary);
+  letter-spacing: 0.2px;
+  color: #484440;
 }
 
 .gridSection {
@@ -21,22 +23,23 @@
 .exploreMoreWrap {
   display: flex;
   justify-content: center;
-  padding: 56px 32px;
+  padding: 42px 32px 128px;
 }
 
 .exploreMore {
-  border: 1px solid var(--color-black);
-  padding: 16px 40px;
+  border: 1px solid #1d1d1d;
+  padding: 15px 22px 17px;
   font-family: var(--font-arial);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.42px;
   text-transform: uppercase;
-  color: var(--color-black);
+  color: #292929;
   transition: background 0.15s ease, color 0.15s ease;
 }
 
 .exploreMore:hover {
-  background: var(--color-black);
+  background: #1d1d1d;
   color: var(--color-white);
 }

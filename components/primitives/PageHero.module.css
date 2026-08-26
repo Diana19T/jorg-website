@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   width: 100%;
-  height: 536px;
+  height: 534px;
 }
 
 .image {
@@ -13,29 +13,34 @@
 
 .textBlock {
   position: absolute;
-  left: 307px;
+  left: 18.05px;
   top: 50%;
   transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .eyebrow {
-  margin: 0 0 8px;
+  margin: 0;
   font-family: var(--font-arial);
   font-weight: 700;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 18px;
-  letter-spacing: 1px;
   text-transform: uppercase;
-  color: var(--color-black);
+  color: #1d1d1d;
+  white-space: nowrap;
+  text-align: center;
 }
 
 .title {
   margin: 0;
   font-family: var(--font-arial);
   font-weight: 700;
-  font-size: 44px;
-  line-height: 1.1;
+  font-size: 30px;
+  line-height: 36px;
   text-transform: uppercase;
-  color: var(--color-black);
-  white-space: nowrap;
+  color: #1d1d1d;
+  width: 305px;
+  text-align: center;
 }
