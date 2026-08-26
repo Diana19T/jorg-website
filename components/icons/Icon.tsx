@@ -50,3 +50,22 @@ export function ChevronDownIcon({ size = 10, ...props }: IconProps) {
     </svg>
   );
 }
+export function ChevronLeftIcon({ size = 24, alt = "Previous", ...props }: RasterIconProps) {
+  // eslint-disable-next-line @next/next/no-img-element
+  return <img src="/icons/chevron-left.png" width={size} height={size} alt={alt} {...props} />;
+}
+
+export function ChevronRightIcon({ size = 24, alt = "Next", ...props }: RasterIconProps) {
+  // eslint-disable-next-line @next/next/no-img-element
+  return <img src="/icons/chevron-right.png" width={size} height={size} alt={alt} {...props} />;
+}
+
+export function MapMarkerIcon({ size = 24, alt = "", ...props }: RasterIconProps) {
+  // eslint-disable-next-line @next/next/no-img-element
+  return <img src="/icons/map-marker.png" width={size} height={size} alt={alt} {...props} />;
+}
+
+export function ArrowsHIcon({ size = 24, alt = "", ...props }: RasterIconProps) {
+  // eslint-disable-next-line @next/next/no-img-element
+  return <img src="/icons/arrows-h.png" width={size} height={size} alt={alt} {...props} />;
+}
