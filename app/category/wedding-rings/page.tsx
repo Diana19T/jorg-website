@@ -13,7 +13,7 @@ import styles from "./page.module.css";
 // certain; the specific image-to-product pairing is unverified against Figma (same
 // caveat as the mega-menu images) since live Figma access was unavailable this session.
 const products: Product[] = [
-  { name: "Noir Signet Ring", price: "$2,450", imageSrc: "/images/category/wedding-rings/grid-1.png" },
+  { name: "Noir Signet Ring", price: "$2,450", imageSrc: "/images/category/wedding-rings/grid-1.png", href: "/product/ring-jardin-de-los-placeres-maxi" },
   { name: "Luna Diamond Band", price: "$3,180", imageSrc: "/images/category/wedding-rings/grid-2.png" },
   { name: "Obsidian Ring", price: "$4,900", imageSrc: "/images/category/wedding-rings/grid-3.png" },
   { name: "Pure Trace Ring", price: "$2,780", imageSrc: "/images/category/wedding-rings/grid-4.png" },

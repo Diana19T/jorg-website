@@ -67,51 +67,5 @@ export function MapMarkerIcon({ size = 24, alt = "", ...props }: RasterIconProps
 
 export function ArrowsHIcon({ size = 24, alt = "", ...props }: RasterIconProps) {
   // eslint-disable-next-line @next/next/no-img-element
-  return <img src="/icons/arrows-h.png" width={size} height={size} alt={alt} {...props} />;export function ChevronDownRasterIcon({
-  size = 13,
-  ...props
-}: SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 10 6"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
-      <path
-        d="M1 1L5 5L9 1"
-        stroke="currentColor"
-        strokeWidth="1.2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-}
-
-export function ChevronDownRasterIcon({
-  size = 13,
-  ...props
-}: SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 10 6"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
-      <path
-        d="M1 1L5 5L9 1"
-        stroke="currentColor"
-        strokeWidth="1.2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
+  return <img src="/icons/arrows-h.png" width={size} height={size} alt={alt} {...props} />;
 }

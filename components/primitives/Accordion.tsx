@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDownRasterIcon } from "@/components/icons/Icon";
+import { ChevronDownIcon } from "@/components/icons/Icon";
 import styles from "./Accordion.module.css";
 
 export type AccordionItem = {
@@ -23,7 +23,7 @@ export function Accordion({ items }: { items: AccordionItem[] }) {
             onClick={() => setOpenIndex(openIndex === i ? null : i)}
           >
             <span className={styles.label}>{item.label}</span>
-            <ChevronDownRasterIcon size={13} className={styles.chevron} data-open={openIndex === i} />
+            <ChevronDownIcon size={13} className={styles.chevron} data-open={openIndex === i} />
           </button>
           {openIndex === i && item.content && <p className={styles.content}>{item.content}</p>}
         </div>
