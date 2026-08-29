@@ -10,7 +10,7 @@ export const categoriesColumns = [
 
 export const collectionsLeftColumn = {
   title: "By Collection", // 25:1189
-  items: ["Obsidian Drop", "Pure Trace", "Quiet Glow", "Golden Pulse", "Noir Element"],
+  items: [{ label: "Obsidian Drop", href: "/collection/bambu" }, "Pure Trace", "Quiet Glow", "Golden Pulse", "Noir Element"],
 };
 
 export const collectionsRightColumn = {

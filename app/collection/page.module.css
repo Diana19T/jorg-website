@@ -1,0 +1,163 @@
+.page {
+  width: 1710px;
+  margin: 0 auto;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 209px;
+}
+
+.heroTitle {
+  margin: 0 0 180px;
+  font-family: var(--font-arial);
+  font-weight: 700;
+  font-size: 78px;
+  line-height: 56px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+
+.heroBannerWrap {
+  width: 1002px;
+  height: 358.63px;
+  overflow: hidden;
+}
+
+.heroBanner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------- Intro + Explore Collections ---------- */
+.intro {
+  width: 590px;
+  margin: 0 auto;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introText {
+  width: 467px;
+  margin: 0;
+  font-family: var(--font-arial);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  text-align: center;
+  color: #434343;
+}
+
+.exploreButton {
+  margin-top: 34px;
+  width: 216px;
+  height: 45px;
+  border: 1px solid #201e1e;
+  background: transparent;
+  font-family: var(--font-arial);
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: #201e1e;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.exploreButton:hover {
+  background: #201e1e;
+  color: var(--color-white);
+}
+
+/* ---------- Two-up hero pair ---------- */
+.heroPairRow {
+  display: flex;
+  margin-top: 40px;
+}
+
+.heroPairImage {
+  width: 50%;
+  height: 1065px;
+  object-fit: cover;
+  display: block;
+}
+
+.heroPairImageFlipped {
+  transform: scaleX(-1);
+}
+
+/* ---------- Full-bleed images ---------- */
+.fullBleed {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------- 4-up gallery ---------- */
+.gallery {
+  display: flex;
+  gap: 5px;
+}
+
+.galleryImage {
+  width: 25%;
+  height: 861px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------- Pagination ---------- */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  padding: 40px 0;
+  font-family: var(--font-arial);
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: #938d87;
+}
+
+.pagination span[data-current="true"] {
+  color: #131313;
+}
+
+/* ---------- Closing image + wordmark ---------- */
+.closing {
+  position: relative;
+  width: 100%;
+  height: 855px;
+  overflow: hidden;
+}
+
+.closingImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.closingWordmark {
+  position: absolute;
+  left: 50%;
+  top: 659px;
+  transform: translateX(-50%);
+  margin: 0;
+  font-family: var(--font-palanquin-dark);
+  font-weight: 400;
+  font-size: 96px;
+  letter-spacing: 8.64px;
+  color: var(--color-white);
+  white-space: nowrap;
+}

@@ -1,0 +1,37 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.heading {
+  margin: 0 0 50px;
+  font-family: var(--font-arial);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.8px;
+  text-transform: uppercase;
+}
+
+.body {
+  margin: 0 0 13px;
+  font-family: var(--font-arial);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+
+.button {
+  border: 1px solid currentColor;
+  padding: 6px 20px;
+  font-family: var(--font-arial);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12.24px;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  background: transparent;
+}
