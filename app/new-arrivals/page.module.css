@@ -1,0 +1,109 @@
+.page {
+  width: 1710px;
+  margin: 0 auto;
+}
+
+.intro {
+  width: 800px;
+  margin: 0 auto;
+  padding: 43px 0 40px;
+  text-align: center;
+  font-family: var(--font-arial);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #333333;
+}
+
+.gridSection {
+  padding: 0;
+}
+
+/* ---------- Editorial banner ---------- */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 828px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #a79b8b 61.576%, #a89b8b 61.576%),
+    linear-gradient(90deg, #b1a498 35.666%, #ab9f8e 65.327%);
+}
+
+.bannerImageLeft {
+  position: absolute;
+  left: 1px;
+  top: 0;
+  width: 657px;
+  height: 828px;
+  object-fit: cover;
+}
+
+.bannerImageRight {
+  position: absolute;
+  left: 1113px;
+  top: 0;
+  width: 598px;
+  height: 828px;
+  object-fit: cover;
+}
+
+.bannerText {
+  position: absolute;
+  left: 50%;
+  top: 225px;
+  transform: translateX(-50%);
+  width: 393.83px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+
+.bannerParagraph {
+  margin: 0;
+  width: 392px;
+  text-align: center;
+  font-family: var(--font-inter);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--color-white);
+}
+
+.bannerLink {
+  position: relative;
+  padding-bottom: 6px;
+  font-family: var(--font-inter);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: var(--color-white);
+  white-space: nowrap;
+  border-bottom: 1px solid var(--color-white);
+}
+
+/* ---------- Explore More ---------- */
+.exploreMoreWrap {
+  display: flex;
+  justify-content: center;
+  padding: 60px 32px 128px;
+}
+
+.exploreMore {
+  border: 1px solid #1d1d1d;
+  padding: 15px 22px 17px;
+  font-family: var(--font-arial);
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #1d1d1d;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.exploreMore:hover {
+  background: #1d1d1d;
+  color: var(--color-white);
+}

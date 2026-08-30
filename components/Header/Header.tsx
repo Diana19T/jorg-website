@@ -6,13 +6,18 @@ import { MegaMenu, type MegaMenuKey } from "./MegaMenu";
 import styles from "./Header.module.css";
 
 type NavItem = {
+
   label: string;
+
+  href?: string;
+
   menuKey?: MegaMenuKey;
+
 };
 
 // Order + labels transcribed verbatim from Header Link nodes I25:1538;732:2523...2541
 const navItems: NavItem[] = [
-  { label: "NEW" },
+  { label: "NEW", href: "/new-arrivals" },
   { label: "Gift", menuKey: "gift" },
   { label: "Collections", menuKey: "collections" },
   { label: "Categories", menuKey: "categories" },
@@ -40,7 +45,7 @@ export function Header() {
                 onMouseEnter={() => setActiveMenu(item.menuKey ?? null)}
               >
                 {/* Real destination becomes a Next.js <Link> once routing is wired up. */}
-                <a href="#" aria-haspopup={item.menuKey ? "true" : undefined} aria-expanded={item.menuKey ? activeMenu === item.menuKey : undefined}>
+                <a href={item.href ?? "#"} aria-haspopup={item.menuKey ? "true" : undefined} aria-expanded={item.menuKey ? activeMenu === item.menuKey : undefined}>
                   {item.label}
                 </a>
               </li>
