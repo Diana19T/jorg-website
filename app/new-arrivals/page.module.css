@@ -51,7 +51,7 @@
 .bannerText {
   position: absolute;
   left: 50%;
-  top: 225px;
+  top: 325px;
   transform: translateX(-50%);
   width: 393.83px;
   display: flex;
